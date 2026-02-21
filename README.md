@@ -1,5 +1,5 @@
 
-Task 1 — Read the inventory Open inventory.json using a with block and load its contents into a variable called inventory. Print the total number of books currently in the file.
+# Task 1 — Read the inventory Open inventory.json using a with block and load its contents into a variable called inventory. Print the total number of books currently in the file.
 import json
 •	Imports Python’s built-in JSON module.
 •	This module allows reading and writing JSON (JavaScript Object Notation) data.
@@ -24,7 +24,7 @@ Total number of books: 2
 
 
 
-Task 2 — Update and save Append new_book to the inventory list. Write the updated list back to inventory.json using a with block, with an indentation of 4 spaces.
+# Task 2 — Update and save Append new_book to the inventory list. Write the updated list back to inventory.json using a with block, with an indentation of 4 spaces.
 new_book = {"title": "Atomic Habits", "author": "James Clear", "price": 14.99, "in_stock": True}
 •	Creates a Python dictionary representing a book.
 •	Keys:
@@ -33,7 +33,7 @@ o	author → author name
 o	price → book price
 o	in_stock → availability (True = available)
 
-# Read existing inventory
+ Read existing inventory
 with open("inventory.json", "r") as file:
 •	Opens inventory.json in read mode (r).
 •	with ensures file is automatically closed after reading.
@@ -42,11 +42,11 @@ with open("inventory.json", "r") as file:
 •	Reads JSON data from the file.
 •	Converts JSON into a Python object (usually a list of books).
 •	Stores it in variable inventory.
-# Append new book
+ Append new book
 inventory.append(new_book)
 •	Adds the new book dictionary to the end of the inventory list.
 •	Now inventory contains the old books + new book.
-# Write updated inventory back
+ Write updated inventory back
 with open("inventory.json", "w") as file:
 •	Opens the same file in write mode (w).
 •	Write mode replaces old file content with new data.
@@ -65,7 +65,7 @@ print(inventory)
 
 
 
-Task 3 — Display the inventory Read the updated file again and print each book's details in the following format:
+# Task 3 — Display the inventory Read the updated file again and print each book's details in the following format:
 Title: The Alchemist | Author: Paulo Coelho | Price: $12.99
 Title: 1984 | Author: George Orwell | Price: $9.99
 Title: Atomic Habits | Author: James Clear | Price: $14.99
